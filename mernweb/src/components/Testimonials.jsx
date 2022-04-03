@@ -109,7 +109,7 @@ const Section = styled.section`
       .info {
         display: flex;
         justify-content: center;
-        gap: 1rem;
+        gap: 1rem
         align-items: center;
         margin-top: 1rem;
         img {
