@@ -18,31 +18,33 @@ const Home = () => {
       </div>
       <div className="content">
         <div className="title">
-          <h1>TRAVEL TO EXPLORE</h1>
+          <h1>WONDROUS WANDERING PLACES</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
-            natus, enim ipsam magnam odit deserunt itaque? Minima earum velit
-            tenetur!
+          Travel makes one modest, you see what a tiny place you occupy in the world.
+          <br />
+          Traveling leaves you speechless, then turns you into a storyteller.
           </p>
         </div>
         <div className="search">
           <div className="container">
-            <label htmlFor="">Where you want to go</label>
+            <label htmlFor="" >Where you want to go</label>
             <input type="text" placeholder="Search Your location" />
           </div>
           <div className="container">
-            <label htmlFor="">Check-in</label>
+            <label htmlFor="" >Check-in</label>
             <input type="date" />
           </div>
           <div className="container">
-            <label htmlFor="">Check-out</label>
+            <label htmlFor="" >Check-out</label>
             <input type="date" />
           </div>
+          <a href="https://www.yatra.com/" target="_blank" >
           <button>Explore Now</button>
+          </a>
         </div>
       </div>
     </Section>
-    <About/>
+            <About/>
             <Services/>
             <Recommend />
             <Contact/>
@@ -76,7 +78,7 @@ const Section = styled.section`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
+    gap: 2rem;
     .title {
       color: white;
       h1 {
@@ -129,6 +131,7 @@ const Section = styled.section`
         color: white;
         background-color: #4361ee;
         font-size: 1.1rem;
+        width: 10rem;
         text-transform: uppercase;
         transition: 0.3s ease-in-out;
         &:hover {
