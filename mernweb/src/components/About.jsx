@@ -11,11 +11,11 @@ const About = () => {
                         </div>
                         <div className="col-md-6">
                             <h3 className="fs-5 mb-0">About Us</h3>
-                            <h1 className="display-6 mb-2">Who <b>We</b> Are</h1>
+                            <h1 className="display-6 mb-2">WHO<b> ARE</b> WE</h1>
                             <hr className="w-50"/>
-                            <p className="lead mb-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi odit dolorum, necessitatibus dignissimos reprehenderit dicta id rem. Exercitationem soluta ipsam necessitatibus aliquid totam recusandae a alias optio eum quas, corrupti ducimus cupiditate aut adipisci eos tempora quam similique nemo quo, vel dicta blanditiis. Esse magnam laudantium officiis et sed quis?</p>
-                            <button className="btn btn-primary rounded-pill px-4 py-2">Get Started</button>
-                            <button className="btn btn-outline-primary rounded-pill px-4 py-2 ms-2">Contact Us</button>
+                            <p className="lead mb-4">After our around the world trip, we bought a house and settled down. We balanced work,school,and a handful of extracurricular activities with travel and the work of running this website. Our website has done so well that every one can quit the jobs for some days and enjoy the world trip.</p>
+                            <a href='/recommend'><button className="btn btn-primary rounded-pill px-4 py-2">Get Started</button></a>
+                            <a href='/contact'><button className="btn btn-outline-primary rounded-pill px-4 py-2 ms-2">Contact Us</button></a>
                         </div>
                     </div>
                 </div>
