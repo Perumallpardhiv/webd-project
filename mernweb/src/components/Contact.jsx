@@ -2,6 +2,7 @@ import React, {useState} from "react";
 
 const Contact = () => {
 
+  
   const [msg, setMsg] = useState({
     name : "",
     email : "",
@@ -58,6 +59,8 @@ const Contact = () => {
   return (
     <div>
       <section id="contact">
+      <br />
+      <h3 >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Thanks for visiting our website! We love hearing from you and answering your questions</h3>
         <div className="container my-5 py-5">
           <div className="row mb-5">
             <div className="col-12">
