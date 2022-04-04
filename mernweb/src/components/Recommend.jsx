@@ -5,7 +5,13 @@ import Destination2 from "./Destination2.png";
 import Destination3 from "./Destination3.png";
 import Destination4 from "./Destination4.png";
 import Destination5 from "./Destination5.png";
-import Destination6 from "./Destination6.png";
+import Destination6 from "./Destination6.jfif";
+import Destination7 from "./Destination7.jfif";
+import Destination8 from "./Destination8.jpg";
+import Destination9 from "./Destination9.jfif";
+import Destination10 from "./Destination10.jpg";
+import Destination11 from "./Destination11.jfif";
+import Destination12 from "./Destination12.webp";
 import info1 from "./info1.png";
 import info2 from "./info2.png";
 import info3 from "./info3.png";
@@ -15,51 +21,127 @@ const Recommend = () =>{
     {
       image: Destination1,
       title: "Singapore",
-      subTitle: "Singapore, officialy thr Republic of Singapore, is a",
-      cost: "38,800",
-      duration: "Approx 2 night trip",
+      subTitle: "Singapore, Southeast Asia",
+      costFlight: "₹ 11,000",
+      costShip: "₹ 48,000",
+      durationFlight: "8 hrs",
+      durationShip: "8-14 days",
+      dist: "6,325 km"
     },
     {
       image: Destination2,
       title: "Thailand",
-      subTitle: "Thailand is a Southeast Asia country. It's known for",
-      cost: "54,200",
-      duration: "Approx 2 night trip",
+      subTitle: "Thailand is a Southeast Asia country",
+      costFlight: "₹ 13,000",
+      costShip: "₹ 18,000",
+      durationFlight: "4 hrs",
+      durationShip: "15-23 days",
+      dist: "4,525 km"
     },
     {
       image: Destination3,
       title: "Paris",
-      subTitle: "Paris, France's capital, is a major European city and a",
-      cost: "45,500",
-      duration: "Approx 2 night trip",
+      subTitle: "Paris, France's capital, is a major European city",
+      costFlight: "₹ 22,000",
+      costShip: "₹ 65,000",
+      durationFlight: "15 hrs",
+      durationShip: "30-45 days",
+      dist: "7,777 km"
     },
     {
       image: Destination4,
       title: "New Zealand",
-      subTitle: "New Zealand is an island country in the",
-      cost: "24,100",
-      duration: "Approx 1 night trip",
+      subTitle: "New Zealand is an island country in the Australia",
+      costFlight: "₹ 54,997",
+      costShip: "₹ 1,40,000",
+      durationFlight: "32 hrs",
+      durationShip: "14 days",
+      dist: "11,551 km"
     },
     {
       image: Destination5,
       title: "Bora Bora",
-      subTitle: "Bora Bora is a small South Pacific island northwest of",
-      cost: "95,400",
-      duration: "Approx 2 night 2 day trip",
+      subTitle: "Bora Bora is between South America and Australia in the Pacific Ocean",
+      costFlight: "₹ 22,000",
+      costShip: "₹ 65,000",
+      durationFlight: "15 hrs",
+      durationShip: "30-45 days",
+      dist: "10,777 km"
     },
     {
       image: Destination6,
       title: "London",
       subTitle: "London, the capital of England and the United",
-      cost: "38,800",
-      duration: "Approx 3 night 2 day trip",
+      costFlight: "₹ 79,056",
+      costShip: "₹ 1,80,000",
+      durationFlight: "26 hrs",
+      durationShip: "26-30 days",
+      dist: "7,480 km"
+    },
+    {
+      image: Destination7,
+      title: "Agra",
+      subTitle: "Taj Mahal, Tajganj, Uttar Pradesh",
+      costFlight: "₹ 47,000",
+      costShip: "₹ 1,15,000",
+      durationFlight: "11 hrs",
+      durationShip: "20-27 days",
+      dist: "2,999 km"
+    },
+    {
+      image: Destination8,
+      title: "China",
+      subTitle: "Great wall of China, Huairou",
+      costFlight: "₹ 34,000",
+      costShip: "₹ 68,000",
+      durationFlight: "23 hrs",
+      durationShip: "30-38 days",
+      dist: "8,920 km"
+    },
+    {
+      image: Destination9,
+      title: "Peru",
+      subTitle: "Machu Picchu, Cuzco",
+      costFlight: "₹ 72,000",
+      costShip: "₹ 1,35,000",
+      durationFlight: "37 hrs",
+      durationShip: "35-48 days",
+      dist: "9,345 km"
+    },
+    {
+      image: Destination10,
+      title: "Australia",
+      subTitle: "Sydney Harbour Bridge, Sydney",
+      costFlight: "₹ 62,000",
+      costShip: "₹ 1,25,000",
+      durationFlight: "31 hrs",
+      durationShip: "35-45 days",
+      dist: "12,235 km"
+    },
+    {
+      image: Destination11,
+      title: "India",
+      subTitle: "Golden Temple, Punjab",
+      costFlight: "₹ 42,000",
+      costShip: "₹ 1,20,000",
+      durationFlight: "8 hrs",
+      durationShip: "30-40 days",
+      dist: "1,269 km"
+    },
+    {
+      image: Destination12,
+      title: "United States",
+      subTitle: "A Glass Beach, California",
+      costFlight: "₹ 72,000",
+      costShip: "₹ 1,65,000",
+      durationFlight: "37 hrs",
+      durationShip: "45-50 days",
+      dist: "3,650 km"
     },
   ];
 
   const packages = [
-    "The Weekend Break",
-    "The Package Holiday",
-   
+    "POPULAR PLACES"
   ];
 
   const [active, setActive] = useState(1);
@@ -86,7 +168,7 @@ const Recommend = () =>{
         {data.map((destination) => {
           return (
             <div className="destination">
-              <img src={destination.image} alt="" />
+              <a href="https://www.yatra.com/" target="_blank"><img src={destination.image} alt=""/></a>
               <h3>{destination.title}</h3>
               <p>{destination.subTitle}</p>
               <div className="info">
@@ -95,11 +177,15 @@ const Recommend = () =>{
                   <img src={info2} alt="" />
                   <img src={info3} alt="" />
                 </div>
-                <h4>{destination.cost}</h4>
+                <div>
+                <h6>Flight : {destination.costFlight}&nbsp;</h6>                
+                <h6>Ship : {destination.costShip}</h6>
+                </div>
               </div>
               <div className="distance">
-                <span>1000 Kms</span>
-                <span>{destination.duration}</span>
+                <span>Flght Duration <br/> {destination.durationFlight}</span>
+                <span>Ship Duration <br/> {destination.durationShip}</span>
+                <span>Total Distance <br/> {destination.dist}</span>
               </div>
             </div>
           );
