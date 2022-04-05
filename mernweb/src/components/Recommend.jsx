@@ -12,6 +12,9 @@ import Destination9 from "./Destination9.jfif";
 import Destination10 from "./Destination10.jpg";
 import Destination11 from "./Destination11.jfif";
 import Destination12 from "./Destination12.webp";
+import Destination13 from "./Destination13.jfif";
+import Destination14 from "./Destination14.jfif";
+import Destination15 from "./Destination15.jpg";
 import info1 from "./info1.png";
 import info2 from "./info2.png";
 import info3 from "./info3.png";
@@ -138,6 +141,36 @@ const Recommend = () =>{
       durationShip: "45-50 days",
       dist: "3,650 km"
     },
+    {
+      image: Destination13,
+      title: "Italy",
+      subTitle: "Roman Forum, Rome",
+      costFlight: "₹ 62,000",
+      costShip: "₹ 1,25,000",
+      durationFlight: "27 hrs",
+      durationShip: "35-45 days",
+      dist: "2,047 km"
+    },
+    {
+      image: Destination14,
+      title: "Hawaii",
+      subTitle: "A lush tropical beach on Maui, Maui",
+      costFlight: "₹ 52,000",
+      costShip: "₹ 1,25,000",
+      durationFlight: "25 hrs",
+      durationShip: "37-45 days",
+      dist: "2,250 km"
+    },
+    {
+      image: Destination15,
+      title: "New York",
+      subTitle: "Manhattan Island",
+      costFlight: "₹ 70,000",
+      costShip: "₹ 1,45,000",
+      durationFlight: "32 hrs",
+      durationShip: "32-48 days",
+      dist: "3,147 km"
+    },
   ];
 
   const packages = [
@@ -147,6 +180,7 @@ const Recommend = () =>{
   const [active, setActive] = useState(1);
   return (
     <Section id="recommend">
+    <br/>
       <div className="title">
         <h2>Recommended Destinations</h2>
       </div>
@@ -260,13 +294,13 @@ const Section = styled.section`
       }
     }
   }
-  @media screen and (min-width: 280px) and (max-width: 768px) {
+  @media screen and (min-width: 280px) and (max-width: 750px) {
     .packages {
       ul {
         li {
           padding: 0 0.5rem;
-          font-size: 2vh;
-          padding-bottom: 1rem;
+          font-size: 3vh;
+          padding-bottom: 0rem;
         }
         .active {
           border-bottom-width: 0.3rem;
@@ -274,8 +308,8 @@ const Section = styled.section`
       }
     }
     .destinations {
-      grid-template-columns: 1fr;
-      padding: 0;
+      grid-template-columns: 2fr;
+      padding: 3;
     }
   }
   `;
