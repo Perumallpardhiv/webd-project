@@ -60,6 +60,8 @@ const Contact = () => {
     <div>
       <section id="contact">
       <br />
+      <br />
+      <br />
       <h3 >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Thanks for visiting our website! We love hearing from you and answering your questions</h3>
         <div className="container my-5 py-5">
           <div className="row mb-5">
@@ -73,7 +75,7 @@ const Contact = () => {
           </div>
           <div className="row">
             <div className="col-md-6">
-              <img src="/assets/contact.jpg" alt="Contact" className="w-75" />
+              <img src="/assets/blog5.png" alt="Contact" className="w-75" />
             </div>
             <div className="col-md-6">
               <form onSubmit={handleSubmit} method="POST">
