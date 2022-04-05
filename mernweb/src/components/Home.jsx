@@ -10,11 +10,10 @@ import Testimonials from './Testimonials';
 const Home = () => {
     return (
         <div>
-         
-          
-        <Section id="hero">
+                   
+      <Section id="hero">
       <div className="background">
-        <img src="/assets/hero.png" alt="" />
+        <img src="/assets/hero.png" alt="" height="500px"/>
       </div>
       <div className="content">
         <div className="title">
@@ -141,20 +140,19 @@ const Section = styled.section`
     }
   }
   @media screen and (min-width: 280px) and (max-width: 980px) {
-    height: 25rem;
+    height: 35rem;
     .background {
-      background-color: palegreen;
       img {
-        height: 100%;
+        height: 550px;
       }
     }
     .content {
       .title {
         h1 {
-          font-size: 1rem;
+          font-size: rem;
         }
         p {
-          font-size: 0.8rem;
+          font-size: 1rem;
           padding: 1vw;
         }
       }
