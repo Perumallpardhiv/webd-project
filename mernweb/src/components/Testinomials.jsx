@@ -158,10 +158,13 @@ const Section = styled.section`
   }
   @media screen and (min-width: 280px) and (max-width: 768px) {
     .testimonials {
+      display: inline-block;
       flex-direction: column;
-      margin: 0;
+      margin: 5%;
       .testimonial {
         justify-content: center;
+        margin:10%;
+        align:center;
         .info {
           flex-direction: column;
           justify-content: center;
