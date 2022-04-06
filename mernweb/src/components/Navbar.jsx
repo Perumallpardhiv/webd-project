@@ -32,7 +32,7 @@ const Navbar = (props) => {
           <NavLink className="nav-link" to="/Recommend">Recommend</NavLink>
         </li>
         <li>
-          <NavLink className="nav-link" to="/Testimonials">Founders</NavLink>
+          <NavLink className="nav-link" to="/Testimonials">Developers</NavLink>
         </li>
       </ul>
 
