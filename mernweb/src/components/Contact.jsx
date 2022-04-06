@@ -87,7 +87,7 @@ const Contact = () => {
                     type="text"
                     className="form-control"
                     id="name"
-                    placeholder="John Smith"
+                    placeholder="Your Name"
                     name="name"
                     value={msg.name}
                     onChange={handleChange}
