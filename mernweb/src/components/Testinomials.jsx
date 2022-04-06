@@ -12,7 +12,7 @@ const Testimonials =() => {
     
      <Section id="testimonials">
       <div className="title">
-        <h2>DEVELOPERS</h2>
+        <h2>CONTRIBUTORS</h2>
       </div>
       <div className="testimonials">
       <div className="testimonial">
