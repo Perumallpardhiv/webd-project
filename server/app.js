@@ -102,9 +102,7 @@ app.post('/message',async(req,res) =>{
             message : message
         });
         
-        // Save Method is Used to Create User or Insert User
-        // But Before saving or Inserting, Password will Hash
-        // Beacuse of Hashing. After hash, It will save to DB
+        
         const created = await sendMsg.save();
         console.log(created);
         res.status(200).send("Sent");
